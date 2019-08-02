@@ -1,0 +1,71 @@
+/* body {
+  padding: 0 20px;
+} */
+span {
+  margin: 0.05rem 0;
+  font-size: 0.16rem;
+  display: inline-block;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(40, 44, 52);
+  color: rgb(40, 44, 52);
+  overflow: hidden;
+}
+
+#fullScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 11em;
+  border-radius: 6px;
+  height: 46px;
+  font-size: 22px;
+  /* background: rgba(255, 255, 255, 0.0); */
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  animation: bulibuli 1s infinite ease-in-out alternate;
+  opacity: 0
+}
+#fullScreen:focus {
+  outline: none;
+  animation: mymove 5s ease-in-out;
+}
+
+@keyframes mymove {
+  to {
+    left: 0px;
+    top: 20;
+    right: 30;
+  }
+}
+
+@keyframes bulibuli {
+  0% {
+    background: rgba(0, 0, 0, 0);
+    color: #000;
+    opacity: 0
+    /* height: 0; */
+  }
+
+  100% {
+    background: rgba(0, 0, 0, 0.5);
+    color: #eee;
+    opacity: 1
+  }
+}
+
+/* #fullScreen button{
+;
+} */
